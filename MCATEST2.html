@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Cash Advance - Fast Business Funding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?business,money') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better readability */
+        }
+        .form-section {
+            padding: 50px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="hero">
+        <h1>Get Up to $500K in Business Funding – No Collateral Needed!</h1>
+        <p>Approval in 24 Hours – Simple Application – Fast Funding</p>
+        <a href="#apply" class="btn btn-lg btn-primary">Apply Now</a>
+    </section>
+    
+    <div class="container mt-5" id="apply">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-section">
+                    <h2 class="text-center">Apply for Business Funding</h2>
+                    <form id="fundingForm" action="thank-you.html" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Business Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Annual Revenue</label>
+                            <select class="form-select" required>
+                                <option value="">Select Revenue Range</option>
+                                <option value="less than 50k">Less than $50K</option>
+                                <option value="50k-100k">$50K - $100K</option>
+                                <option value="100k-500k">$100K - $500K</option>
+                                <option value="500k-1M">$500K - $1M</option>
+                                <option value="1M+">$1M+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("fundingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "thank-you.html";
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
